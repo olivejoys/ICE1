@@ -31,7 +31,11 @@ public class CardTrick {
             c.setValue(rndm.nextInt(13) + 1); //insert call to random number generator here)
             c.setSuit(Card.SUITS[rndm.nextInt(4)]); //insert call to random number between 0-3 here])
             magicHand [i] = c; // stores card object in array 
-            System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue()); 
+            System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue());
+            // Create a hard-coded luckyCard with a card number and suit
+            Card luckyCard = new Card(); 
+            luckyCard.setValue(2); 
+            luckyCard.setSuit("Clubs"); 
         }
         
         //insert code to ask the user for Card value and suit, create their card
